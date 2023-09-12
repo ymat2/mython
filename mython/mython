@@ -1,17 +1,15 @@
 #! /usr/bin/env python3
 
 import argparse
+from mython.util import *
 
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("-t", "--to")
   args = parser.parse_args()
 
-  say_hello(args.to)
-
-
-def say_hello(str):
-  print("Hello,", str, "!")
+  hello.say_hello(args.to)
+  bye.say_bye(args.to)
 
 
 if __name__ == "__main__":
