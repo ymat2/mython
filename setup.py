@@ -1,11 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-  name = "mython",
-  version = "0.1.0",
+  name = 'mython',
+  version = '0.1.0',
   description = "My first python package",
   license = "MIT",
-  auther = "ymat2",
-  python_requires = ">=3.6",
-  scripts = ["mython/mython",]
+  author = "ymat2",
+  python_requires = '>=3.6',
+  packages = find_packages(),
+  scripts = ['mython/mython',]
 )
