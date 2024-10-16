@@ -1,6 +1,6 @@
 [project]
 name = "mython"
-version = "0.1.0"
+version = "0.2.0"
 description = "Personal python package"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -12,3 +12,8 @@ mython = "mython.hello:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+]
