@@ -1,14 +1,9 @@
 name: Run pytest
-on:
-  push:
-    branches:
-      -main
+on: [push]
 jobs:
   pytest:
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -26,9 +21,4 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: Run pytests
-        run: uv run pytest tests --junitxml=pytest.xml
-
-      - name: Publish Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        with:
-          junit_files: pytest.xml
+        run: uv run pytest tests
