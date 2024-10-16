@@ -1,13 +1,13 @@
 [project]
 name = "mython"
 version = "0.1.0"
-description = "Add your description here"
+description = "Personal python package"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-mython = "mython:main"
+mython = "mython.hello:main"
 
 [build-system]
 requires = ["hatchling"]
