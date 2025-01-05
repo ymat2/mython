@@ -7,7 +7,7 @@ from pathlib import Path
 def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("pattern")
-    parser.add_argument("infile", nargs = "*")
+    parser.add_argument("infile", nargs="*")
     args = parser.parse_args()
     return args
 

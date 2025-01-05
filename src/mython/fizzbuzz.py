@@ -1,8 +1,9 @@
 import argparse
 
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--number", type = int)
+    parser.add_argument("--number", type=int)
     args = parser.parse_args()
 
     print(fizzbuzz(args.number))
@@ -18,6 +19,7 @@ def fizzbuzz(num: int) -> str:
     else:
         msg = str(num)
     return msg
+
 
 if __name__ == "__main__":
     main()
