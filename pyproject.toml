@@ -1,6 +1,6 @@
 [project]
 name = "mython"
-version = "0.2.2"
+version = "0.2.3"
 description = "Personal python package"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -8,6 +8,7 @@ dependencies = []
 
 [project.scripts]
 mython = "mython.main:main"
+hello = "mython.hello:main"
 grepy = "mython.grepy:main"
 
 [build-system]
