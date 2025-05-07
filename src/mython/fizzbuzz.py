@@ -3,9 +3,8 @@ import argparse
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--number", type=int)
+    parser.add_argument("-n", "--number", type=int)
     args = parser.parse_args()
-
     print(fizzbuzz(args.number))
 
 

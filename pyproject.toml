@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-mython = "mython.hello:main"
+mython = "mython.main:main"
 grepy = "mython.grepy:main"
 
 [build-system]
